@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=5.0">
+</head>
+    <style>
+        p{
+        color:rgb(0, 255, 200);
+        font-size: 29px;
+
+ }
+        body{
+            background-color: blueviolet;
+            text-align: center;
+}
+        
+</style>
+  
+<body>
+<p>Inscrição SENAI</p>
+<form>
+ <label for="nome">Nome Completo</label><br>
+<input type="text" id="nome" name="nome" requerid><br>
+<label for="telefone">Telefone:</label><br>
+<input type="tel" id="telefone" name="telefone" required><br>
+<label for="curso">Curso desejado:</label><br>
+<select id="curso" name="curso" required><br>
+<option value="">Selecione...</option><br>
+<option value="informatica">Técnico em Informática</option>
+<option value="eletronica">Técnico em Eletrônica</option>
+<option value="mecanica">Técnico em Mecânica</option>
+</select>
+<br>
+<label for="Comentários">Comentários:</label><br>
+    <textarea id="sugestão" name="sugestão" rows="5" cols="40" placeholder="Escreva sua sugestão aqui"></textarea><br>
+<button type="submit">Enviar Inscrição</button>
+    </form>
+    
+
+</body>
+</html>

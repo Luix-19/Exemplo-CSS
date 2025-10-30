@@ -3,155 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inscrição SENAI</title>
+    <title>Confirmação - SENAI</title>
     <style>
-       
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #0051ff; 
+            font-family: Arial, sans-serif;
+            background-color: #0033cc;
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
+            height: 100vh;
             margin: 0;
-            padding: 20px;
-            box-sizing: border-box;
         }
 
-       
-        .form-container {
-            background-color: #ffffff;
-            border-radius: 12px;
-            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07);
-            max-width: 600px;
-            width: 100%;
-            box-sizing: border-box;
-            padding: 2.5em 3em;
+        .confirmation-box {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            width: 350px;
         }
-
 
         h2 {
-            text-align: center;
-            color: #333; 
-            margin-top: 0;
-            margin-bottom: 1.5em;
-            font-size: 1.8em;
-            font-weight: 600;
+            color: #06437c;
         }
 
-       
-        .form-group {
-            margin-bottom: 1.5em;
-        }
-
-        
-        label {
-            display: block;
-            margin-bottom: 0.5em;
-            color: #555;
-            font-weight: 600;
-        }
-
-        
-        input[type="text"],
-        input[type="email"],
-        input[type="tel"],
-        select,
-        textarea {
-            width: 100%;
-            padding: 0.8em 1em;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            box-sizing: border-box; 
-            font-size: 1em;
-            color: #333;
-            transition: border-color 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        
-        input[type="text"]:focus,
-        input[type="email"]:focus,
-        input[type= "tel"]:focus,
-        select:focus,
-        textarea:focus {
-            border-color: #FF8C00; 
-            box-shadow: 0 0 8px rgba(255, 140, 0, 0.25); 
-            outline: none; 
-        }
-
-        
-        textarea {
-            resize: vertical; 
-            min-height: 100px;
-        }
-
-       
-        .submit-button {
-            width: 100%;
-            padding: 0.9em;
-            border: none;
-            border-radius: 6px;
-            background-color: #06437c; 
-            color: white;
+        p {
             font-size: 1.1em;
-            font-weight: 700;
+            color: #333;
+            margin-top: 15px;
+        }
+
+        .back-button {
+            background-color: #06437c;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border-radius: 5px;
             cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.1s ease;
+            font-size: 1em;
         }
 
-        .submit-button:hover {
-            background-color: #0065fd; /* Tom mais escuro do laranja para o hover */
+        .back-button:hover {
+            background-color: #0065fd;
         }
-        
-        .submit-button:active {
-            transform: scale(0.99); 
-        }
-
     </style>
 </head>
 <body>
 
-    <div class="form-container">
-        
-        <form action="#" method="post">
-            <h2>Inscrição SENAI</h2>
-
-            <div class="form-group">
-                <label for="nome">Nome completo:</label>
-                <input type="text" id="nome" name="nome" placeholder="" required>
-            </div>
-
-            <div class="form-group">
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" placeholder="" required>
-            </div>
-
-            <div class="form-group">
-                <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone" placeholder="" required>
-            </div>
-
-            <div class="form-group">
-                <label for="curso">Curso desejado:</label>
-                <select id="curso" name="curso" required>
-                    <option value="">Selecione...</option>
-                    <option value="curso1">Técnico em Automação Industrial</option>
-                    <option value="curso2">Técnico em Desenvolvimento de Sistemas</option>
-                    <option value="curso3">Técnico em Eletrotécnica</option>
-                    <option value="curso4">Técnico em Logística</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label for="observacoes">Observações:</label>
-                <textarea id="observacoes" name="observacoes" rows="5" placeholder=""></textarea>
-            </div>
-
-            <div class="form-group" style="margin-bottom: 0;">
-                <button type="submit" class="submit-button">Concluir Inscrição</button>
-            </div>
-
-        </form>
+    <div class="confirmation-box">
+        <h2>Inscrição Confirmada!</h2>
+        <p>Obrigado por se inscrever no SENAI. Em breve entraremos em contato com você.</p>
+        <button class="back-button" onclick="window.location.href='inscricao.html'">Voltar para Inscrição</button>
     </div>
 
 </body>

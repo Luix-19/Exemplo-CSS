@@ -1,4 +1,4 @@
 # Exemplo-CSS
 
 # link do site
-https://github.com/Luix-19/Exemplo-CSS
+https://luix-19.github.io/Exemplo-CSS/
